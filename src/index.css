@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-primary: #253C6D;
+  --color-navy-secondary: #30497D;
+  --color-brand-blue: #455B8A;
+  --color-accent-orange: #F2842F;
+  --color-off-white: #F7F8FA;
+  --color-light-gray: #EEF1F5;
+  --color-dark-text: #172033;
+  
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-dark-text);
+    background-color: var(--color-off-white);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom architectural utility classes */
+.architectural-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(48, 73, 125, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(48, 73, 125, 0.05) 1px, transparent 1px);
+}
+
+.architectural-grid-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
