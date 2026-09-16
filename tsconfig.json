@@ -28,6 +28,7 @@
   "include": [
     "src",
     "backend",
+    "api",
     "server.ts",
     "vite.config.ts"
   ]
